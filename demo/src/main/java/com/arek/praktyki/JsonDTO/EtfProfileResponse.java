@@ -8,8 +8,6 @@ import lombok.Setter;
 import java.util.List;
 
 @Data
-@Getter
-@Setter
 public class EtfProfileResponse {
     @JsonProperty("net_assets")
     private String netAssets;

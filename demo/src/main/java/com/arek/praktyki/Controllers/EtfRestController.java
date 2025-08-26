@@ -14,6 +14,7 @@ import reactor.core.publisher.Mono;
 @RequestMapping("/api/etf")
 @RequiredArgsConstructor
 public class EtfRestController {
+
     private final AlphaWebClientService alphaVantageService;
 
     @GetMapping("/{symbol}")

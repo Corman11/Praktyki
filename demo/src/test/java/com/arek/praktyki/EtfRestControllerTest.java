@@ -23,7 +23,6 @@ public class EtfRestControllerTest {
     @MockitoBean
     private AlphaWebClientService alphaVantageService;
 
-
     private EtfProfileResponse createMockEtfProfile() {
         EtfProfileResponse response = new EtfProfileResponse();
         response.setNetAssets("1B");
@@ -62,7 +61,6 @@ public class EtfRestControllerTest {
                 .exchange()
                 .expectStatus().isOk();
     }
-
 
     @Test
     void getEtfProfile_ShouldReturnBadRequest() {
